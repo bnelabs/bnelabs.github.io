@@ -181,6 +181,12 @@ button { cursor: pointer; }
 }
 
 .site-header a { pointer-events: auto; }
+.site-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 6px clamp(10px, 2cqw, 22px);
+}
 .site-link {
   color: var(--water);
   font-size: clamp(13px, 1.53cqw, 16px);
