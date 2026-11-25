@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A personal collection of projects and notes from BNELabs.">
+  <meta name="theme-color" content="#071f27">
+  <title>BNELabs</title>
+  <link rel="icon" href="./assets/bne-mark.webp" type="image/webp">
+  <link rel="stylesheet" href="./site.css">
+  <script src="./site.js" defer></script>
+</head>
+<body>
+  <main class="valley" id="valley">
+    <header class="site-header">
+      <span class="wordmark" role="img" aria-label="BNE labs"></span>
+      <a class="site-link" href="https://github.com/bnelabs?tab=repositories" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+    </header>
+
+    <section class="intro">
+      <h1>
+        <span>Read the strata.</span>
+        <span>Follow the glint.</span>
+        <span>Build on what holds.</span>
+      </h1>
+      <p>I’m curious about how things work. I build small tools to find out.</p>
+      <button class="river-button" id="follow-river" type="button" hidden>
+        Follow the river <span aria-hidden="true">↗</span>
+      </button>
+    </section>
+
+    <div class="map">
+      <div class="landscape" aria-hidden="true"></div>
+      <svg class="route" viewBox="0 0 1487 1058" preserveAspectRatio="none" aria-hidden="true">
+        <g opacity="0">
+          <path class="route-line"></path>
+          <circle class="route-light" r="5"></circle>
+        </g>
+      </svg>
+      <div id="ridge-projects" role="group" aria-label="Projects on the map"></div>
+      <div id="river-projects" role="group" aria-label="Small projects along the river"></div>
+    </div>
+
+    <section class="project-note" id="project-note" aria-label="Project note">
+      <div id="note-copy" aria-live="polite">
+        <p class="river-note" hidden>Small things I built while learning.</p>
+        <h2>Beacon</h2>
+        <p class="summary">A liquidity model depends on the data it starts with.</p>
+      </div>
+      <a class="site-link" id="project-source" href="https://github.com/bnelabs/beacon" target="_blank" rel="noopener noreferrer">Read the code ↗</a>
+    </section>
+
+    <footer class="site-footer">
+      <button class="research-note" type="button" data-project="echolyra" aria-controls="project-note" aria-pressed="false" hidden>
+        Echolyra <span>Research in progress</span>
+      </button>
+    </footer>
+  </main>
+</body>
+</html>
